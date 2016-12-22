@@ -29,3 +29,18 @@ chatbox["name"]
 /Ha csak simán akarunk valamit kiiratni akkor:
 
 chatbox{"Gua 0.0.1"}
+
+/Function
+
+function nev[table=name] /a táblában tároló adatokat meglehessen hívni 
+table.create("errors")
+table.dir("errors" , "40: Nem létezik ilyen név!")
+If name (sanyi) then
+chatbox{"Köszöntelek sanyi!"}
+Else
+chatbox[error:40] /40=Nem létezik ilyen név!
+end
+
+/Így nézki egy funkció. Meglehet hívni bárhova.
+
+nev[] /Meg is van hívva.
